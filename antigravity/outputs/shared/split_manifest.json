@@ -1,0 +1,29 @@
+{
+    "random_seed": 42,
+    "split_method": "sklearn.model_selection.train_test_split stratified on target. 70/15/15 across train/val/test.",
+    "split_fractions": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "row_counts": {
+        "train": 90916,
+        "validation": 19482,
+        "test": 19482,
+        "total": 129880
+    },
+    "target_distribution": {
+        "train": {
+            "0": 51416,
+            "1": 39500
+        },
+        "validation": {
+            "0": 11018,
+            "1": 8464
+        },
+        "test": {
+            "0": 11018,
+            "1": 8464
+        }
+    }
+}

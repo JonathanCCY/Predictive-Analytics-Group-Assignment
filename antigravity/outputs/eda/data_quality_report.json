@@ -1,0 +1,29 @@
+{
+    "dataset_source": "data/train.csv and data/test.csv combined before split",
+    "rows_total": 129880,
+    "rows_train_used_for_eda": 90916,
+    "columns_total": 24,
+    "target_name": "satisfaction",
+    "class_balance_train": {
+        "0": 51416,
+        "1": 39500
+    },
+    "missing_by_column": {
+        "Arrival Delay in Minutes": 293
+    },
+    "duplicate_row_count": 0,
+    "invalid_value_flags": [
+        "Missing values found in Arrival Delay in Minutes"
+    ],
+    "possible_identifier_columns": [],
+    "possible_leakage_columns": [],
+    "high_cardinality_columns": [],
+    "severe_skew_columns": [
+        "Departure Delay in Minutes",
+        "Arrival Delay in Minutes"
+    ],
+    "notes": [
+        "EDA executed strictly on the 70% training split only"
+    ],
+    "execution_status": "CONFIRMED_BY_EXECUTION"
+}

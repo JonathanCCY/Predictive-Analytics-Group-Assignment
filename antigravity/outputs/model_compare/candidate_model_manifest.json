@@ -1,0 +1,45 @@
+{
+    "candidate_models": [
+        "LogisticRegression",
+        "RandomForestClassifier",
+        "ExtraTreesClassifier",
+        "HistGradientBoostingClassifier"
+    ],
+    "preprocessing_by_model": {
+        "LogisticRegression": "median impute + StandardScaler for numeric; most_frequent impute + OneHotEncoder for categorical",
+        "RandomForestClassifier": "median impute for numeric; most_frequent impute + OneHotEncoder for categorical",
+        "ExtraTreesClassifier": "median impute for numeric; most_frequent impute + OneHotEncoder for categorical",
+        "HistGradientBoostingClassifier": "median impute for numeric; most_frequent impute + OrdinalEncoder for categorical"
+    },
+    "fixed_parameters_by_model": {
+        "LogisticRegression": {
+            "max_iter": 1000,
+            "random_state": 42,
+            "solver": "lbfgs"
+        },
+        "RandomForestClassifier": {
+            "n_estimators": 100,
+            "random_state": 42
+        },
+        "ExtraTreesClassifier": {
+            "n_estimators": 100,
+            "random_state": 42
+        },
+        "HistGradientBoostingClassifier": {
+            "max_iter": 100,
+            "random_state": 42
+        }
+    },
+    "split_manifest_path": "outputs/shared/split_manifest.json",
+    "target_name": "satisfaction",
+    "random_seed": 42,
+    "selection_metric": "validation ROC-AUC",
+    "tie_break_rules": [
+        "PR-AUC",
+        "F1 at 0.5",
+        "fixed priority order"
+    ],
+    "threshold_rule": "fixed at 0.5",
+    "dependency_scope": "requirements.txt",
+    "execution_status": "CONFIRMED_BY_EXECUTION"
+}
