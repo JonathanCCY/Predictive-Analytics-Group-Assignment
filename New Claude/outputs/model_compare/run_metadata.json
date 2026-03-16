@@ -1,0 +1,22 @@
+{
+  "task": "Step 3 - Controlled Baseline Model Training and Comparison",
+  "script": "src/train_and_compare_models.py",
+  "execution_date": "2026-03-16 18:02:54",
+  "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "random_seed": 42,
+  "threshold": 0.5,
+  "split_manifest_path": "outputs/shared/split_manifest.json",
+  "split_manifest_reused": true,
+  "train_rows": 90916,
+  "val_rows": 19482,
+  "test_rows": 19482,
+  "candidate_models": [
+    "LogisticRegression",
+    "RandomForestClassifier",
+    "ExtraTreesClassifier",
+    "HistGradientBoostingClassifier"
+  ],
+  "selected_model": "HistGradientBoostingClassifier",
+  "selection_metric": "validation ROC-AUC",
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

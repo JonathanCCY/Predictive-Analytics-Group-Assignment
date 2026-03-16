@@ -1,0 +1,14 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "split": "validation",
+  "threshold": 0.5,
+  "metrics": {
+    "ROC-AUC": 0.994632,
+    "PR-AUC": 0.993664,
+    "Accuracy": 0.962735,
+    "Precision": 0.975541,
+    "Recall": 0.937736,
+    "F1": 0.956265
+  },
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

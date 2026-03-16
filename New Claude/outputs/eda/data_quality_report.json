@@ -1,0 +1,39 @@
+{
+  "dataset_source": "data/train.csv + data/test.csv (Kaggle Airline Passenger Satisfaction)",
+  "rows_total": 129880,
+  "rows_train_used_for_eda": 90916,
+  "columns_total": 23,
+  "target_name": "satisfaction",
+  "class_balance_train": {
+    "0": 51416,
+    "1": 39500
+  },
+  "missing_by_column": {
+    "Arrival Delay in Minutes": 293
+  },
+  "duplicate_row_count": 0,
+  "invalid_value_flags": [
+    "No invalid values detected"
+  ],
+  "possible_identifier_columns": [
+    "id (dropped)",
+    "Unnamed: 0 (dropped)"
+  ],
+  "possible_leakage_columns": [
+    "Arrival Delay in Minutes (r=0.966 with Departure Delay in Minutes \u2014 near-duplicate information)"
+  ],
+  "high_cardinality_columns": [
+    "None identified"
+  ],
+  "severe_skew_columns": [
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "notes": [
+    "Arrival Delay in Minutes has 293 missing values in training set",
+    "Rating columns (14 service features) use integer scale 0-5",
+    "Delay columns are right-skewed with long tails",
+    "Correlation between Departure and Arrival Delay: 0.966"
+  ],
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

@@ -1,0 +1,8 @@
+{
+  "note": "Reference copy \u2014 canonical source is outputs/shared/split_manifest.json",
+  "canonical_path": "outputs/shared/split_manifest.json",
+  "random_seed": 42,
+  "train_rows": 90916,
+  "val_rows": 19482,
+  "test_rows": 19482
+}

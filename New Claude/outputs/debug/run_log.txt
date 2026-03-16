@@ -1,0 +1,40 @@
+[2026-03-16 18:06:40] Loaded split manifest from /Users/jonathan/Desktop/COURSES/Predictive Analytics/Group Assignment/New Claude/outputs/shared/split_manifest.json
+[2026-03-16 18:06:40] Loading data...
+[2026-03-16 18:06:40]   Combined shape: (129880, 25)
+[2026-03-16 18:06:40]   Dropped columns: ['Unnamed: 0', 'id']
+[2026-03-16 18:06:40] Preprocessing data...
+[2026-03-16 18:06:40] Reconstructing splits from manifest indices...
+[2026-03-16 18:06:40]   Train: 90916, Val: 19482, Test: 19482
+[2026-03-16 18:06:40]   Numeric features (18): ['Age', 'Flight Distance', 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Inflight service', 'Cleanliness', 'Departure Delay in Minutes', 'Arrival Delay in Minutes']
+[2026-03-16 18:06:40]   Categorical features (4): ['Gender', 'Customer Type', 'Type of Travel', 'Class']
+[2026-03-16 18:06:40] Training model...
+[2026-03-16 18:06:40]   Model fitted on training data only.
+[2026-03-16 18:06:40] Evaluating on validation set...
+[2026-03-16 18:06:40]   Validation Accuracy: 0.8735
+[2026-03-16 18:06:40]   Validation ROC-AUC: 0.926597
+[2026-03-16 18:06:40]   Validation F1: 0.851461
+[2026-03-16 18:06:40]   Validation Classification Report:
+[2026-03-16 18:06:40]                   precision    recall  f1-score   support
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40]                0       0.88      0.90      0.89     11018
+[2026-03-16 18:06:40]                1       0.87      0.83      0.85      8464
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40]         accuracy                           0.87     19482
+[2026-03-16 18:06:40]        macro avg       0.87      0.87      0.87     19482
+[2026-03-16 18:06:40]     weighted avg       0.87      0.87      0.87     19482
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40] Evaluating on test set...
+[2026-03-16 18:06:40]   Test Accuracy: 0.8740
+[2026-03-16 18:06:40]   Test ROC-AUC: 0.927669
+[2026-03-16 18:06:40]   Test F1: 0.851742
+[2026-03-16 18:06:40]   Test Classification Report:
+[2026-03-16 18:06:40]                   precision    recall  f1-score   support
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40]                0       0.88      0.91      0.89     11018
+[2026-03-16 18:06:40]                1       0.87      0.83      0.85      8464
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40]         accuracy                           0.87     19482
+[2026-03-16 18:06:40]        macro avg       0.87      0.87      0.87     19482
+[2026-03-16 18:06:40]     weighted avg       0.87      0.87      0.87     19482
+[2026-03-16 18:06:40]     
+[2026-03-16 18:06:40] Saving outputs to outputs/debug/...

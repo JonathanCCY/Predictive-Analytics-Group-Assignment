@@ -1,0 +1,27 @@
+{
+  "task": "Step 3 - Final Selected Model",
+  "model": "HistGradientBoostingClassifier",
+  "script": "src/train_and_compare_models.py",
+  "execution_date": "2026-03-16 18:02:54",
+  "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "random_seed": 42,
+  "threshold": 0.5,
+  "validation_metrics": {
+    "ROC-AUC": 0.994632,
+    "PR-AUC": 0.993664,
+    "Accuracy": 0.962735,
+    "Precision": 0.975541,
+    "Recall": 0.937736,
+    "F1": 0.956265
+  },
+  "test_metrics": {
+    "ROC-AUC": 0.994966,
+    "PR-AUC": 0.994084,
+    "Accuracy": 0.96448,
+    "Precision": 0.975061,
+    "Recall": 0.942344,
+    "F1": 0.958423
+  },
+  "test_label": "post-selection descriptive",
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

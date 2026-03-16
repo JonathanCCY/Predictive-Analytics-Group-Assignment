@@ -1,0 +1,17 @@
+# Airline Passenger Satisfaction benchmark
+# Purpose: pinned dependency boundary for Steps 2–5 of the benchmark workflow
+# Policy: do not add new libraries unless the benchmark prompt explicitly requires it
+# Recommended interpreter: Python 3.11.x
+# Notes:
+# - This file is a benchmark specification, not a claim about the evaluator's current environment.
+# - All candidate models in Step 3 must remain sklearn-native.
+# - If the local environment differs, update this file and document the reason in docs/decision_log.md.
+
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.11.4
+scikit-learn==1.4.2
+matplotlib==3.8.4
+seaborn==0.13.2
+joblib==1.4.2
+pytest==8.2.2

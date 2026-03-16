@@ -1,0 +1,43 @@
+[2026-03-16 17:57:02] Loading data...
+[2026-03-16 17:57:02]   train.csv: (103904, 25), test.csv: (25976, 25)
+[2026-03-16 17:57:02]   Combined: (129880, 25)
+[2026-03-16 17:57:02]   Dropped unnamed columns: ['Unnamed: 0']
+[2026-03-16 17:57:02]   Dropped 'id' column
+[2026-03-16 17:57:02]   Final shape after drops: (129880, 23)
+[2026-03-16 17:57:02]   Columns (23): ['Gender', 'Customer Type', 'Age', 'Type of Travel', 'Class', 'Flight Distance', 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Inflight service', 'Cleanliness', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'satisfaction']
+[2026-03-16 17:57:02] Encoding target variable...
+[2026-03-16 17:57:02]   Original target values: ['neutral or dissatisfied' 'satisfied']
+[2026-03-16 17:57:02]   Encoded target distribution:
+satisfaction
+0    73452
+1    56428
+[2026-03-16 17:57:02] Creating stratified 70/15/15 split...
+[2026-03-16 17:57:02]   Train: 90916, Val: 19482, Test: 19482
+[2026-03-16 17:57:02]   Total: 129880
+[2026-03-16 17:57:02]   Split manifest saved to /Users/jonathan/Desktop/COURSES/Predictive Analytics/Group Assignment/New Claude/outputs/shared/split_manifest.json
+[2026-03-16 17:57:02] Training data for EDA: (90916, 23)
+[2026-03-16 17:57:02] Analysing data quality...
+[2026-03-16 17:57:02]   Missing values in training set:
+Arrival Delay in Minutes    293
+[2026-03-16 17:57:02]   Duplicate rows (excl. target) in training set: 0
+[2026-03-16 17:57:02]   Invalid value flags: ['No invalid values detected']
+[2026-03-16 17:57:02]   Severe skew columns (|skew|>2): ['Departure Delay in Minutes', 'Arrival Delay in Minutes']
+[2026-03-16 17:57:02]   Possible leakage columns: ['Arrival Delay in Minutes (r=0.966 with Departure Delay in Minutes — near-duplicate information)']
+[2026-03-16 17:57:02]   High cardinality columns: None
+[2026-03-16 17:57:02] Data quality report saved.
+[2026-03-16 17:57:02] Generating numeric summary...
+[2026-03-16 17:57:02]   numeric_summary.csv saved.
+[2026-03-16 17:57:02] Generating categorical summary...
+[2026-03-16 17:57:02]   categorical_summary.csv saved.
+[2026-03-16 17:57:02] Plotting class balance...
+[2026-03-16 17:57:02]   class_balance.png saved.
+[2026-03-16 17:57:02] Plotting missing values...
+[2026-03-16 17:57:02]   missing_values.png saved.
+[2026-03-16 17:57:02] Plotting numeric distributions...
+[2026-03-16 17:57:03]   numeric_distributions.png saved.
+[2026-03-16 17:57:03] Plotting correlation heatmap...
+[2026-03-16 17:57:03]   correlation_heatmap.png saved.
+[2026-03-16 17:57:03] Computing target associations...
+[2026-03-16 17:57:04]   top_target_associations.png saved.
+[2026-03-16 17:57:04] Plotting categorical vs target...
+[2026-03-16 17:57:04]   categorical_vs_target.png saved.

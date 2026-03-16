@@ -1,0 +1,34 @@
+[2026-03-16 18:02:43] Loaded split manifest from /Users/jonathan/Desktop/COURSES/Predictive Analytics/Group Assignment/New Claude/outputs/shared/split_manifest.json
+[2026-03-16 18:02:43]   Seed: 42
+[2026-03-16 18:02:43]   Train: 90916, Val: 19482, Test: 19482
+[2026-03-16 18:02:43] Loading and preparing data...
+[2026-03-16 18:02:43]   Combined shape after drops: (129880, 23)
+[2026-03-16 18:02:43] Reconstructing splits from manifest indices...
+[2026-03-16 18:02:43]   Train: 90916, Val: 19482, Test: 19482
+[2026-03-16 18:02:43]   Split index reconstruction verified against manifest.
+[2026-03-16 18:02:43]   Features: 18 numeric, 4 categorical
+[2026-03-16 18:02:43] Training LogisticRegression...
+[2026-03-16 18:02:43]   Validation ROC-AUC: 0.926597, PR-AUC: 0.930832, F1: 0.851461
+[2026-03-16 18:02:43]   Test ROC-AUC: 0.927669 (post-selection descriptive)
+[2026-03-16 18:02:43] Training RandomForestClassifier...
+[2026-03-16 18:02:49]   Validation ROC-AUC: 0.993699, PR-AUC: 0.992709, F1: 0.955672
+[2026-03-16 18:02:49]   Test ROC-AUC: 0.994053 (post-selection descriptive)
+[2026-03-16 18:02:49] Training ExtraTreesClassifier...
+[2026-03-16 18:02:53]   Validation ROC-AUC: 0.993141, PR-AUC: 0.992034, F1: 0.952718
+[2026-03-16 18:02:53]   Test ROC-AUC: 0.993102 (post-selection descriptive)
+[2026-03-16 18:02:53] Training HistGradientBoostingClassifier...
+[2026-03-16 18:02:53]   Validation ROC-AUC: 0.994632, PR-AUC: 0.993664, F1: 0.956265
+[2026-03-16 18:02:54]   Test ROC-AUC: 0.994966 (post-selection descriptive)
+[2026-03-16 18:02:54] All 4 models trained and evaluated.
+[2026-03-16 18:02:54] Applying model selection rule...
+[2026-03-16 18:02:54]   Selection ranking (best first):
+[2026-03-16 18:02:54]     1. HistGradientBoostingClassifier: ROC-AUC=0.994632, PR-AUC=0.993664, F1=0.956265 <-- SELECTED
+[2026-03-16 18:02:54]     2. RandomForestClassifier: ROC-AUC=0.993699, PR-AUC=0.992709, F1=0.955672
+[2026-03-16 18:02:54]     3. ExtraTreesClassifier: ROC-AUC=0.993141, PR-AUC=0.992034, F1=0.952718
+[2026-03-16 18:02:54]     4. LogisticRegression: ROC-AUC=0.926597, PR-AUC=0.930832, F1=0.851461
+[2026-03-16 18:02:54]   Final selected model: HistGradientBoostingClassifier
+[2026-03-16 18:02:54] Saving comparison layer artefacts...
+[2026-03-16 18:02:54]   Comparison layer artefacts saved.
+[2026-03-16 18:02:54] Saving final model artefacts...
+[2026-03-16 18:02:54]   model.joblib saved.
+[2026-03-16 18:02:54]   Final model artefacts saved.

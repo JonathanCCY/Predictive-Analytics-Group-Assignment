@@ -1,0 +1,13 @@
+{
+  "task": "Step 2 - EDA and Insight Generation",
+  "script": "src/eda.py",
+  "execution_date": "2026-03-16 17:57:04",
+  "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "random_seed": 42,
+  "split_ratios": "70/15/15",
+  "train_rows": 90916,
+  "val_rows": 19482,
+  "test_rows": 19482,
+  "eda_scope": "training rows only",
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

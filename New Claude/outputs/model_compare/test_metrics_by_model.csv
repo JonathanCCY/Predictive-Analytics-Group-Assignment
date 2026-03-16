@@ -1,0 +1,5 @@
+model,label,ROC-AUC,PR-AUC,Accuracy,Precision,Recall,F1
+LogisticRegression,post-selection descriptive comparison,0.927669,0.931665,0.873986,0.871155,0.833176,0.851742
+RandomForestClassifier,post-selection descriptive comparison,0.994053,0.99299,0.963299,0.971637,0.943053,0.957132
+ExtraTreesClassifier,post-selection descriptive comparison,0.993102,0.991953,0.961041,0.969531,0.939863,0.954466
+HistGradientBoostingClassifier,post-selection descriptive comparison,0.994966,0.994084,0.96448,0.975061,0.942344,0.958423

@@ -1,0 +1,14 @@
+{
+  "model": "LogisticRegression",
+  "split": "validation",
+  "threshold": 0.5,
+  "metrics": {
+    "ROC-AUC": 0.926597,
+    "PR-AUC": 0.930832,
+    "Accuracy": 0.873473,
+    "Precision": 0.868897,
+    "Recall": 0.834712,
+    "F1": 0.851461
+  },
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}
