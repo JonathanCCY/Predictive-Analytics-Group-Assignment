@@ -1,0 +1,42 @@
+{
+  "status": "CONFIRMED BY EXECUTION",
+  "seed": 42,
+  "strategy": "combine original train.csv and test.csv, then stratified 70/15/15 split",
+  "target": "satisfaction",
+  "class_encoding": {
+    "neutral or dissatisfied": 0,
+    "satisfied": 1
+  },
+  "input_shapes": {
+    "train.csv": [
+      103904,
+      25
+    ],
+    "test.csv": [
+      25976,
+      25
+    ],
+    "combined": [
+      129880,
+      26
+    ]
+  },
+  "output_shapes": {
+    "train": [
+      90916,
+      26
+    ],
+    "validation": [
+      19482,
+      26
+    ],
+    "test": [
+      19482,
+      26
+    ]
+  },
+  "train_class_balance": {
+    "negative_count": 51416,
+    "positive_count": 39500
+  }
+}

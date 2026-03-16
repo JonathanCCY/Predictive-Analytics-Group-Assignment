@@ -1,0 +1,58 @@
+{
+  "target": "satisfaction",
+  "included_features": [
+    "Gender",
+    "Customer Type",
+    "Age",
+    "Type of Travel",
+    "Class",
+    "Flight Distance",
+    "Inflight wifi service",
+    "Departure/Arrival time convenient",
+    "Ease of Online booking",
+    "Gate location",
+    "Food and drink",
+    "Online boarding",
+    "Seat comfort",
+    "Inflight entertainment",
+    "On-board service",
+    "Leg room service",
+    "Baggage handling",
+    "Checkin service",
+    "Inflight service",
+    "Cleanliness",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "numeric_features": [
+    "Age",
+    "Flight Distance",
+    "Inflight wifi service",
+    "Departure/Arrival time convenient",
+    "Ease of Online booking",
+    "Gate location",
+    "Food and drink",
+    "Online boarding",
+    "Seat comfort",
+    "Inflight entertainment",
+    "On-board service",
+    "Leg room service",
+    "Baggage handling",
+    "Checkin service",
+    "Inflight service",
+    "Cleanliness",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Customer Type",
+    "Type of Travel",
+    "Class"
+  ],
+  "excluded_features": {
+    "row_id": "generated audit identifier",
+    "Unnamed: 0": "identifier-like source index column excluded from modelling",
+    "id": "identifier-like passenger id column excluded from modelling"
+  }
+}
