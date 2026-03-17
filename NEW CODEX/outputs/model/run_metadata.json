@@ -1,0 +1,45 @@
+{
+  "task_name": "model",
+  "execution_status": "CONFIRMED_BY_EXECUTION",
+  "random_seed": 42,
+  "selected_model": "HistGradientBoostingClassifier",
+  "metrics_validation": {
+    "model_name": "HistGradientBoostingClassifier",
+    "split": "validation",
+    "metrics": {
+      "roc_auc": 0.9946316847135519,
+      "pr_auc": 0.9936636232680085,
+      "accuracy": 0.9627348321527563,
+      "precision": 0.9755408062930186,
+      "recall": 0.9377362948960303,
+      "f1": 0.9562650602409638,
+      "threshold": 0.5,
+      "tn": 10819,
+      "fp": 199,
+      "fn": 527,
+      "tp": 7937
+    },
+    "execution_status": "CONFIRMED_BY_EXECUTION"
+  },
+  "metrics_test": {
+    "model_name": "HistGradientBoostingClassifier",
+    "split": "test",
+    "metrics": {
+      "roc_auc": 0.9949659836576065,
+      "pr_auc": 0.9940840626276425,
+      "accuracy": 0.9644800328508367,
+      "precision": 0.9750611246943766,
+      "recall": 0.94234404536862,
+      "f1": 0.958423455900024,
+      "threshold": 0.5,
+      "tn": 10814,
+      "fp": 204,
+      "fn": 488,
+      "tp": 7976
+    },
+    "evaluation_note": "formal test evaluation for selected model; candidate test metrics elsewhere are post-selection descriptive comparison only",
+    "execution_status": "CONFIRMED_BY_EXECUTION"
+  },
+  "feature_manifest_path": "outputs/model/feature_manifest.json",
+  "model_artifact_path": "outputs/model/model.joblib"
+}

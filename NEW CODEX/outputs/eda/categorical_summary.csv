@@ -1,0 +1,5 @@
+feature,unique_count,missing_count,missing_pct,mode,top_value_frequency,top_value_pct,levels
+Gender,2,0,0.0,Female,46127,0.5073584407585023,"[""Male"", ""Female""]"
+Customer Type,2,0,0.0,Loyal Customer,74227,0.8164349509437283,"[""Loyal Customer"", ""disloyal Customer""]"
+Type of Travel,2,0,0.0,Business travel,62853,0.6913304588851247,"[""Personal Travel"", ""Business travel""]"
+Class,3,0,0.0,Business,43527,0.47876061419332133,"[""Eco Plus"", ""Business"", ""Eco""]"

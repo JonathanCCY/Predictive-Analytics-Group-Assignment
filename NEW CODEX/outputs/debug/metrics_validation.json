@@ -1,0 +1,18 @@
+{
+  "model_name": "LogisticRegression",
+  "split": "validation",
+  "metrics": {
+    "roc_auc": 0.926597096570966,
+    "pr_auc": 0.9308320819336684,
+    "accuracy": 0.8734729493891797,
+    "precision": 0.8688968146599434,
+    "recall": 0.8347117202268431,
+    "f1": 0.8514612835191323,
+    "threshold": 0.5,
+    "tn": 9952,
+    "fp": 1066,
+    "fn": 1399,
+    "tp": 7065
+  },
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}

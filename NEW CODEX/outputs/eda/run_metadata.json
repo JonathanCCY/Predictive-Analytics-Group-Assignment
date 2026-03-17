@@ -1,0 +1,160 @@
+{
+  "task_name": "eda",
+  "execution_status": "CONFIRMED_BY_EXECUTION",
+  "random_seed": 42,
+  "split_manifest_action": "created",
+  "split_summary": {
+    "train": {
+      "row_count": 90916,
+      "target_distribution": {
+        "0": 51416,
+        "1": 39500
+      },
+      "target_rate_positive": 0.4344669805094813
+    },
+    "validation": {
+      "row_count": 19482,
+      "target_distribution": {
+        "0": 11018,
+        "1": 8464
+      },
+      "target_rate_positive": 0.43445231495739656
+    },
+    "test": {
+      "row_count": 19482,
+      "target_distribution": {
+        "0": 11018,
+        "1": 8464
+      },
+      "target_rate_positive": 0.43445231495739656
+    }
+  },
+  "files_inspected": [
+    "data/train.csv",
+    "data/test.csv",
+    "requirements.txt",
+    "docs/reproducibility_record.md",
+    "docs/decision_log.md"
+  ],
+  "commands_executed": [
+    "python3 src/eda.py"
+  ],
+  "top_associations": [
+    {
+      "feature": "Class",
+      "method": "cramers_v",
+      "association": 0.5037344748620405,
+      "signed_association": NaN
+    },
+    {
+      "feature": "Online boarding",
+      "method": "point_biserial",
+      "association": 0.5011198855238254,
+      "signed_association": 0.5011198855238254
+    },
+    {
+      "feature": "Type of Travel",
+      "method": "cramers_v",
+      "association": 0.44890369884906456,
+      "signed_association": NaN
+    },
+    {
+      "feature": "Inflight entertainment",
+      "method": "point_biserial",
+      "association": 0.3995418711948711,
+      "signed_association": 0.3995418711948711
+    },
+    {
+      "feature": "Seat comfort",
+      "method": "point_biserial",
+      "association": 0.34920526736828605,
+      "signed_association": 0.34920526736828605
+    },
+    {
+      "feature": "On-board service",
+      "method": "point_biserial",
+      "association": 0.32285678722583916,
+      "signed_association": 0.32285678722583916
+    },
+    {
+      "feature": "Leg room service",
+      "method": "point_biserial",
+      "association": 0.31534110652911057,
+      "signed_association": 0.31534110652911057
+    },
+    {
+      "feature": "Cleanliness",
+      "method": "point_biserial",
+      "association": 0.3068265492257454,
+      "signed_association": 0.3068265492257454
+    },
+    {
+      "feature": "Flight Distance",
+      "method": "point_biserial",
+      "association": 0.2997233562985699,
+      "signed_association": 0.2997233562985699
+    },
+    {
+      "feature": "Inflight wifi service",
+      "method": "point_biserial",
+      "association": 0.2863303681050444,
+      "signed_association": 0.2863303681050444
+    }
+  ],
+  "quality_report": {
+    "dataset_source": "data/train.csv + data/test.csv",
+    "rows_total": 129880,
+    "rows_train_used_for_eda": 90916,
+    "columns_total": 23,
+    "target_name": "satisfaction",
+    "class_balance_train": {
+      "0": 51416,
+      "1": 39500
+    },
+    "missing_by_column": {
+      "Arrival Delay in Minutes": 293
+    },
+    "duplicate_row_count": 0,
+    "invalid_value_flags": [
+      "Customer Type labels use mixed capitalization (for example `Loyal Customer` vs `disloyal Customer`)."
+    ],
+    "possible_identifier_columns": [
+      "Unnamed: 0",
+      "id"
+    ],
+    "possible_leakage_columns": [],
+    "high_cardinality_columns": [],
+    "severe_skew_columns": [
+      "Departure Delay in Minutes",
+      "Arrival Delay in Minutes"
+    ],
+    "notes": [
+      "Target-aware summaries and plots use training rows only.",
+      "Validation and test splits were used only to verify split sizes and class distributions.",
+      "Arrival Delay in Minutes is the only column with missing values in the source data.",
+      "Customer Type labels are semantically consistent but use mixed capitalization.",
+      "Delay variables may be operationally unavailable in pre-flight deployment settings, although they are not leakage under a post-flight satisfaction prediction framing."
+    ],
+    "execution_status": "CONFIRMED_BY_EXECUTION"
+  },
+  "created_files": [
+    "outputs/shared/split_manifest.json",
+    "outputs/eda/class_balance.png",
+    "outputs/eda/missing_values.png",
+    "outputs/eda/numeric_summary.csv",
+    "outputs/eda/categorical_summary.csv",
+    "outputs/eda/numeric_distributions.png",
+    "outputs/eda/top_target_associations.png",
+    "outputs/eda/correlation_heatmap.png",
+    "outputs/eda/data_quality_report.json",
+    "docs/eda_summary.md",
+    "outputs/eda/run_log.txt",
+    "outputs/eda/run_metadata.json",
+    "docs/reproducibility_record.md",
+    "docs/decision_log.md"
+  ],
+  "dropped_columns": [
+    "Unnamed: 0",
+    "id"
+  ]
+}

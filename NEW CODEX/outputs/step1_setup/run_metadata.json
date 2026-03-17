@@ -1,0 +1,114 @@
+{
+  "task_name": "step1_setup",
+  "execution_status": "CONFIRMED_BY_EXECUTION",
+  "random_seed": 42,
+  "benchmark_protocol_file": {
+    "path": "agent_reproducibility_protocol_v3.md",
+    "status": "UNVERIFIED"
+  },
+  "binding_files": {
+    "requirements.txt": "CONFIRMED_BY_FILE_INSPECTION",
+    "docs/reproducibility_record.md": "CONFIRMED_BY_EXECUTION",
+    "outputs/shared/split_manifest.json": "UNVERIFIED"
+  },
+  "dataset_summary": {
+    "train.csv": {
+      "path": "data/train.csv",
+      "rows": 103904,
+      "columns": 25,
+      "first_column": "Unnamed: 0",
+      "has_id_column": true,
+      "has_target_column": true,
+      "target_distribution": {
+        "neutral or dissatisfied": 58879,
+        "satisfied": 45025
+      },
+      "unnamed_first_column_detected": true
+    },
+    "test.csv": {
+      "path": "data/test.csv",
+      "rows": 25976,
+      "columns": 25,
+      "first_column": "Unnamed: 0",
+      "has_id_column": true,
+      "has_target_column": true,
+      "target_distribution": {
+        "neutral or dissatisfied": 14573,
+        "satisfied": 11403
+      },
+      "unnamed_first_column_detected": true
+    }
+  },
+  "dependency_versions": {
+    "numpy": {
+      "required_version": "1.26.4",
+      "installed_version": "2.1.3",
+      "status": "UNVERIFIED"
+    },
+    "pandas": {
+      "required_version": "2.2.2",
+      "installed_version": "2.2.3",
+      "status": "UNVERIFIED"
+    },
+    "scipy": {
+      "required_version": "1.11.4",
+      "installed_version": "1.15.3",
+      "status": "UNVERIFIED"
+    },
+    "scikit-learn": {
+      "required_version": "1.4.2",
+      "installed_version": "1.6.1",
+      "status": "UNVERIFIED"
+    },
+    "matplotlib": {
+      "required_version": "3.8.4",
+      "installed_version": "3.10.0",
+      "status": "UNVERIFIED"
+    },
+    "seaborn": {
+      "required_version": "0.13.2",
+      "installed_version": "0.13.2",
+      "status": "CONFIRMED_BY_EXECUTION"
+    },
+    "joblib": {
+      "required_version": "1.4.2",
+      "installed_version": "1.4.2",
+      "status": "CONFIRMED_BY_EXECUTION"
+    },
+    "pytest": {
+      "required_version": "8.2.2",
+      "installed_version": "8.3.4",
+      "status": "UNVERIFIED"
+    }
+  },
+  "created_directories": [
+    "data",
+    "outputs",
+    "outputs/shared",
+    "outputs/eda",
+    "outputs/model_compare",
+    "outputs/model",
+    "outputs/debug",
+    "outputs/step1_setup",
+    "docs",
+    "tests"
+  ],
+  "data_path_preparation": [
+    {
+      "path": "data/train.csv",
+      "result": "created_symlink->../train.csv"
+    },
+    {
+      "path": "data/test.csv",
+      "result": "created_symlink->../test.csv"
+    }
+  ],
+  "split_created_in_step1": false,
+  "created_files": [
+    "docs/reproducibility_record.md",
+    "docs/decision_log.md",
+    "outputs/step1_setup/run_log.txt",
+    "outputs/step1_setup/run_metadata.json"
+  ],
+  "updated_files": []
+}

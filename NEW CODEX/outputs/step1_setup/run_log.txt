@@ -1,0 +1,25 @@
+Repository root: /Users/eggfriedrice/Predictive Analytics/Group Assignment/Codex v0.2
+Random seed set to: 42
+Protocol file present: no, using prompt fallback
+Created directory: data
+Created directory: outputs
+Created directory: outputs/shared
+Created directory: outputs/eda
+Created directory: outputs/model_compare
+Created directory: outputs/model
+Created directory: outputs/debug
+Created directory: outputs/step1_setup
+Created directory: docs
+Created directory: tests
+Prepared data/train.csv: created_symlink->../train.csv
+Prepared data/test.csv: created_symlink->../test.csv
+Dependency check - numpy: required=1.26.4, installed=2.1.3, status=UNVERIFIED
+Dependency check - pandas: required=2.2.2, installed=2.2.3, status=UNVERIFIED
+Dependency check - scipy: required=1.11.4, installed=1.15.3, status=UNVERIFIED
+Dependency check - scikit-learn: required=1.4.2, installed=1.6.1, status=UNVERIFIED
+Dependency check - matplotlib: required=3.8.4, installed=3.10.0, status=UNVERIFIED
+Dependency check - seaborn: required=0.13.2, installed=0.13.2, status=CONFIRMED_BY_EXECUTION
+Dependency check - joblib: required=1.4.2, installed=1.4.2, status=CONFIRMED_BY_EXECUTION
+Dependency check - pytest: required=8.2.2, installed=8.3.4, status=UNVERIFIED
+Dataset check - train.csv: rows=103904, columns=25, first_column=Unnamed: 0, has_id=True, has_target=True
+Dataset check - test.csv: rows=25976, columns=25, first_column=Unnamed: 0, has_id=True, has_target=True

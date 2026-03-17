@@ -1,0 +1,8 @@
+Execution status: CONFIRMED_BY_EXECUTION
+Corrected script: src/broken_pipeline_fixed.py
+Source inspected: broken_pipeline.py
+Split manifest reused: outputs/shared/split_manifest.json
+Split manifest SHA-256: 687510b33da154d45ae88e4425fadf5f43791b592bc8978b83a4b1b47a7b99f2
+Model intent preserved: LogisticRegression baseline
+Validation metrics: {'roc_auc': 0.926597096570966, 'pr_auc': 0.9308320819336684, 'accuracy': 0.8734729493891797, 'precision': 0.8688968146599434, 'recall': 0.8347117202268431, 'f1': 0.8514612835191323, 'threshold': 0.5, 'tn': 9952, 'fp': 1066, 'fn': 1399, 'tp': 7065}
+Test metrics: {'roc_auc': 0.9276691200616554, 'pr_auc': 0.9316653386737639, 'accuracy': 0.8739862437121445, 'precision': 0.8711550339715874, 'recall': 0.8331758034026465, 'f1': 0.8517422549670873, 'threshold': 0.5, 'tn': 9975, 'fp': 1043, 'fn': 1412, 'tp': 7052}

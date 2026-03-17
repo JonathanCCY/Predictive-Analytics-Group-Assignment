@@ -1,0 +1,10 @@
+Execution status: CONFIRMED_BY_EXECUTION
+Random seed: 42
+Split manifest action: created
+Train/validation/test sizes: 90916/19482/19482
+Training class balance: {'0': 51416, '1': 39500}
+Missing by column: {'Arrival Delay in Minutes': 293}
+Duplicate training rows: 0
+Invalid value flags: ['Customer Type labels use mixed capitalization (for example `Loyal Customer` vs `disloyal Customer`).']
+Severe skew columns: ['Departure Delay in Minutes', 'Arrival Delay in Minutes']
+Top associations: ['Class (cramers_v, 0.504)', 'Online boarding (point_biserial, 0.501)', 'Type of Travel (cramers_v, 0.449)', 'Inflight entertainment (point_biserial, 0.400)', 'Seat comfort (point_biserial, 0.349)']

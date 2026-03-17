@@ -1,0 +1,55 @@
+{
+  "task_name": "debug_broken_pipeline",
+  "execution_status": "CONFIRMED_BY_EXECUTION",
+  "source_file_inspected": "broken_pipeline.py",
+  "corrected_script": "src/broken_pipeline_fixed.py",
+  "target_name": "satisfaction",
+  "target_encoding": {
+    "neutral or dissatisfied": 0,
+    "satisfied": 1
+  },
+  "random_seed": 42,
+  "split_manifest_path": "outputs/shared/split_manifest.json",
+  "split_manifest_sha256": "687510b33da154d45ae88e4425fadf5f43791b592bc8978b83a4b1b47a7b99f2",
+  "validation_metrics": {
+    "roc_auc": 0.926597096570966,
+    "pr_auc": 0.9308320819336684,
+    "accuracy": 0.8734729493891797,
+    "precision": 0.8688968146599434,
+    "recall": 0.8347117202268431,
+    "f1": 0.8514612835191323,
+    "threshold": 0.5,
+    "tn": 9952,
+    "fp": 1066,
+    "fn": 1399,
+    "tp": 7065
+  },
+  "test_metrics": {
+    "roc_auc": 0.9276691200616554,
+    "pr_auc": 0.9316653386737639,
+    "accuracy": 0.8739862437121445,
+    "precision": 0.8711550339715874,
+    "recall": 0.8331758034026465,
+    "f1": 0.8517422549670873,
+    "threshold": 0.5,
+    "tn": 9975,
+    "fp": 1043,
+    "fn": 1412,
+    "tp": 7052
+  },
+  "created_files": [
+    "outputs/debug/metrics_validation.json",
+    "outputs/debug/metrics_test.json",
+    "outputs/debug/run_log.txt",
+    "outputs/debug/validation_predictions.csv",
+    "outputs/debug/test_predictions.csv",
+    "outputs/debug/confusion_matrix_validation.csv",
+    "outputs/debug/confusion_matrix_test.csv",
+    "outputs/debug/model.joblib",
+    "outputs/debug/split_manifest.json",
+    "outputs/debug/feature_manifest.json",
+    "outputs/debug/run_metadata.json",
+    "docs/reproducibility_record.md",
+    "docs/decision_log.md"
+  ]
+}

@@ -1,0 +1,6 @@
+Execution status: CONFIRMED_BY_EXECUTION
+Split manifest reused: outputs/shared/split_manifest.json
+Split manifest SHA-256: 687510b33da154d45ae88e4425fadf5f43791b592bc8978b83a4b1b47a7b99f2
+Selected model: HistGradientBoostingClassifier
+Validation ranking: [{'model_name': 'HistGradientBoostingClassifier', 'roc_auc': 0.9946316847135519, 'pr_auc': 0.9936636232680085, 'f1': 0.9562650602409638}, {'model_name': 'RandomForestClassifier', 'roc_auc': 0.9936987455824993, 'pr_auc': 0.9927093579750123, 'f1': 0.9556715254033952}, {'model_name': 'ExtraTreesClassifier', 'roc_auc': 0.993141180345549, 'pr_auc': 0.992033844884961, 'f1': 0.9527181087243489}, {'model_name': 'LogisticRegression', 'roc_auc': 0.926597096570966, 'pr_auc': 0.9308320819336684, 'f1': 0.8514612835191323}]
+Test metrics note: post-selection descriptive comparison only

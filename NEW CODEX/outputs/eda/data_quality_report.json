@@ -1,0 +1,36 @@
+{
+  "dataset_source": "data/train.csv + data/test.csv",
+  "rows_total": 129880,
+  "rows_train_used_for_eda": 90916,
+  "columns_total": 23,
+  "target_name": "satisfaction",
+  "class_balance_train": {
+    "0": 51416,
+    "1": 39500
+  },
+  "missing_by_column": {
+    "Arrival Delay in Minutes": 293
+  },
+  "duplicate_row_count": 0,
+  "invalid_value_flags": [
+    "Customer Type labels use mixed capitalization (for example `Loyal Customer` vs `disloyal Customer`)."
+  ],
+  "possible_identifier_columns": [
+    "Unnamed: 0",
+    "id"
+  ],
+  "possible_leakage_columns": [],
+  "high_cardinality_columns": [],
+  "severe_skew_columns": [
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "notes": [
+    "Target-aware summaries and plots use training rows only.",
+    "Validation and test splits were used only to verify split sizes and class distributions.",
+    "Arrival Delay in Minutes is the only column with missing values in the source data.",
+    "Customer Type labels are semantically consistent but use mixed capitalization.",
+    "Delay variables may be operationally unavailable in pre-flight deployment settings, although they are not leakage under a post-flight satisfaction prediction framing."
+  ],
+  "execution_status": "CONFIRMED_BY_EXECUTION"
+}
