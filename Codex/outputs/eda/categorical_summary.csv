@@ -1,5 +1,0 @@
-feature,dtype,non_null_count,missing_count,missing_pct,unique_count,top_category,top_category_count,top_category_share_pct,highest_target_rate,lowest_target_rate,target_rate_range
-Class,object,90916,0,0.0,3,Business,43527,47.8761,0.6946,0.1881,0.5065
-Customer Type,object,90916,0,0.0,2,Loyal Customer,74227,81.6435,0.4783,0.2396,0.2387
-Gender,object,90916,0,0.0,2,Female,46127,50.7358,0.4399,0.4292,0.0106
-Type of Travel,object,90916,0,0.0,2,Business travel,62853,69.133,0.5832,0.1015,0.4817
